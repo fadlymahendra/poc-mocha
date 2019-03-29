@@ -1,0 +1,10 @@
+{
+ "ildav" : {
+  "username" : "vendor@ildav.com",
+  "password" : "bizzy123"
+ },
+ "unregistered" : {
+  "username" : "strangers@fadly.com",
+  "password" : "secret"
+ }
+}

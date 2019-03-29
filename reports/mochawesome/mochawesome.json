@@ -1,0 +1,97 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-03-28T15:26:47.930Z",
+    "end": "2019-03-28T15:26:50.182Z",
+    "duration": 2252,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "b7312bba-1cf1-4b29-b3f3-b2bc9e4db7f3",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "8a7ac503-0833-4ffc-930d-9af2aca1cf0d",
+        "title": "POC Login Phoenix Web",
+        "fullFile": "/Users/fadlymahendra/SDET/poc-mocha/test_script/test/login.js",
+        "file": "/test_script/test/login.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@skip As a Seller, I want to be able to login to Phoenix Web",
+            "fullTitle": "POC Login Phoenix Web @skip As a Seller, I want to be able to login to Phoenix Web",
+            "timedOut": false,
+            "duration": 2121,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await page.postLogin(data.ildav);\nassert(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "464ebef8-150c-4f17-969f-1c36b1f6e39d",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "As an Unregistered User, I should not be able to login to Phoenix Web",
+            "fullTitle": "POC Login Phoenix Web As an Unregistered User, I should not be able to login to Phoenix Web",
+            "timedOut": false,
+            "duration": 111,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await page.postLogin(data.failed);\nassert(response.status).to.equal(400, response.body.message);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3b0e1918-e989-4a9c-86c2-991c865ce94e",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "464ebef8-150c-4f17-969f-1c36b1f6e39d",
+          "3b0e1918-e989-4a9c-86c2-991c865ce94e"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 2232,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 180000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 180000
+  },
+  "copyrightYear": 2019
+}
