@@ -7,7 +7,7 @@ node("sdet-node-staging") {
       def currentDir = pwd()
       def VERSION
 
-      stage("Prepare the Reposit") {
+      stage("Prepare the Reposito") {
         step([$class: 'WsCleanup'])
         checkout scm
         commons = load 'common.groovy'
