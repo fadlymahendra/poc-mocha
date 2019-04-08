@@ -6,7 +6,7 @@
   "scripts": {
     "test-api": "./node_modules/mocha/bin/mocha ./test_script/test --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 180000",
     "test": "mocha 'test/*.js'",
-    "posttest": "open 'mochawesome-report/mochawesome.html'"
+    "posttest": "open 'reports/mochawesome/mochawesome.html'"
   },
   "author": "Fadly Mahendra",
   "license": "ISC",
