@@ -6,7 +6,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Automation Test') { 
+        stage('Automation Testd') { 
             steps {
                 sh 'npm run test-api'
             }
