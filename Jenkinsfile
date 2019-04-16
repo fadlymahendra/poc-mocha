@@ -1,20 +1,13 @@
-pipeline {
-    agent { label 'slave-two' }
-    stages {
-        stage('Building') { 
-            steps {
-                sh 'npm install'
-            }
-        }
-        stage('Automation Testd') { 
-            steps {
-                sh 'npm run test-api'
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                sh 'rm -rf node_modules' 
-            }
-        }
+node("slave-two") {
+    stage("prepare repo") {
+         checkout scm
+    }
+
+    stage("Install NPM") {
+         sh "npm install"
+    }
+
+    stage("Run Test") {
+        sh "npm run test-api"
     }
 }
