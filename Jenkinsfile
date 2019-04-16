@@ -1,5 +1,5 @@
 node("slave-two") {
-    stage("prepare repo") {
+    stage("prepare repos") {
          checkout scm
     }
 
